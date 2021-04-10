@@ -1,0 +1,145 @@
+E:\java certification\1Z0-819\src\com\company>jshell
+|  Welcome to JShell -- Version 11.0.8
+|  For an introduction type: /help intro
+
+jshell> StringBuilder sb1 = new StringBuilder(); // length = 0, capacity=16
+sb1 ==>
+
+jshell> StringBuilder sb2 = new StringBuilder("animal"); // length = 7, capacity=23
+sb2 ==> animal
+
+jshell> StringBuilder sb3 = new StringBuilder(10); // length = 0, capacity=10
+sb3 ==>
+
+jshell> String alpha = ""
+alpha ==> ""
+
+jshell> for ( char c='a'; c<='z'; c++){
+   ...> alpha+=c;
+   ...> }
+
+jshell> apha
+|  Error:
+|  cannot find symbol
+|    symbol:   variable apha
+|  apha
+|  ^--^
+
+jshell> alpha
+alpha ==> "abcdefghijklmnopqrstuvwxyz"
+
+jshell> StringBuilder bravo = new StringBuilder()
+bravo ==>
+
+jshell> for ( char c='a'; c<='z'; c++){
+   ...> bravo.append(c);
+   ...> }
+
+jshell> bravo
+bravo ==> abcdefghijklmnopqrstuvwxyz
+
+jshell> String st = new String("Start")
+st ==> "Start"
+
+jshell> st.concat("+middle")
+$11 ==> "Start+middle"
+
+jshell> String sam = st.concat("+end")
+sam ==> "Start+end"
+
+jshell> StringBuilder st = new StringBu
+StringBuilder(
+
+<press tab again to see all possible completions>
+
+jshell> StringBuilder st = new StringBu
+StringBuffer(              StringBufferInputStream(   StringBuilder(
+
+jshell> StringBuilder st = new StringBuilder("Start")
+st ==> Start
+
+jshell> sb.append("+middle")
+|  Error:
+|  cannot find symbol
+|    symbol:   variable sb
+|  sb.append("+middle")
+|  ^^
+
+jshell> st.append("+middle")
+$14 ==> Start+middle
+
+jshell> StringBuilder same = sb.append("+end")
+|  Error:
+|  cannot find symbol
+|    symbol:   variable sb
+|  StringBuilder same = sb.append("+end");
+|                       ^^
+
+jshell> StringBuilder same = st.append("+end")
+same ==> Start+middle+end
+
+jshell> StringBuilder a = new StringBuilder("abc")
+a ==> abc
+
+jshell> StringBu
+StringBuffer              StringBufferInputStream   StringBuilder
+
+jshell> StringBuilder b = new StringBuid
+jshell> StringBuilder b = new StringBuider
+jshell> StringBuilder b = new StringBuilder("de")
+b ==> de
+
+jshell> StringBuilder b = a.append("de")
+b ==> abcde
+
+jshell> b=b.append("f").append("g")
+b ==> abcdefg
+
+jshell> a
+a ==> abcdefg
+
+jshell> b
+b ==> abcdefg
+
+jshell> StringBuilder sb4 = new StringBuilder("animals")
+sb4 ==> animals
+
+jshell> sb.insert(7,"-")
+|  Error:
+|  cannot find symbol
+|    symbol:   variable sb
+|  sb.insert(7,"-")
+|  ^^
+
+jshell> sb4.insert(7,"-")
+$23 ==> animals-
+
+jshell> sb4.insert(0,"-")
+$24 ==> -animals-
+
+jshell> sb4.insert(4,"-")
+$25 ==> -ani-mals-
+
+jshell> StringBuilder sb5=new StringBuilder("abcdef")
+sb5 ==> abcdef
+
+jshell> sb5.delete(1,3)
+$27 ==> adef
+
+jshell> sb5.deleteCharAt(3)
+$28 ==> ade
+
+jshell> sb5.delete
+delete(         deleteCharAt(
+
+jshell> sb5.deleteCharAt(1,100)
+|  Error:
+|  method deleteCharAt in class java.lang.StringBuilder cannot be applied to given types;
+|    required: int
+|    found: int,int
+|    reason: actual and formal argument lists differ in length
+|  sb5.deleteCharAt(1,100)
+|  ^--------------^
+
+jshell> sb5.delete(1,100)
+$29 ==> a
